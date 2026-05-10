@@ -360,19 +360,37 @@ details p,
   align-items: center;
 }
 
+.about-media {
+  display: grid;
+  gap: 18px;
+}
+
 .about-image-wrap {
-  overflow: hidden;
+  margin: 0;
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  aspect-ratio: 2 / 1;
-  background: var(--linen);
 }
 
 .about-image-wrap img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
   object-fit: cover;
   object-position: center;
+  border-radius: var(--radius);
+  background: var(--linen);
+  box-shadow: var(--shadow);
+}
+
+.secondary-about-image img {
+  aspect-ratio: 4 / 5;
+  object-position: center;
+}
+
+.about-image-wrap figcaption {
+  margin-top: 10px;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.45;
 }
 
 .about-copy p {
@@ -380,6 +398,13 @@ details p,
   margin: 18px 0 0;
   color: var(--ink-soft);
   font-size: 1.06rem;
+}
+
+.disclaimer {
+  padding: 14px 16px;
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius);
+  background: rgba(214, 168, 92, 0.14);
 }
 
 .receive-grid {
@@ -553,6 +578,13 @@ details p,
 .form-copy {
   position: sticky;
   top: 32px;
+}
+
+.form-copy a,
+.footer-inner a {
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .submission-form {
@@ -744,6 +776,7 @@ details p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 18px;
   width: min(var(--max-width), calc(100% - 32px));
   margin: 0 auto;
@@ -756,6 +789,10 @@ details p {
 .footer-inner p:first-child {
   color: var(--white);
   font-weight: 900;
+}
+
+.footer-inner p:last-child {
+  width: 100%;
 }
 
 @media (max-width: 1040px) {
@@ -796,9 +833,14 @@ details p {
     position: static;
   }
 
-  .about-image-wrap {
+  .about-image-wrap img {
     aspect-ratio: 2 / 1;
     max-height: 440px;
+  }
+
+  .secondary-about-image img {
+    aspect-ratio: 4 / 5;
+    max-height: none;
   }
 
   .steps,
@@ -877,9 +919,14 @@ details p {
     grid-template-columns: 1fr;
   }
 
-  .about-image-wrap {
+  .about-image-wrap img {
     aspect-ratio: 2 / 1;
     max-height: 430px;
+  }
+
+  .secondary-about-image img {
+    aspect-ratio: 4 / 5;
+    max-height: none;
   }
 
   .service-card-wide {

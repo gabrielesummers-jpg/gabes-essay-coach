@@ -1,6 +1,6 @@
-# Gabe's Essay Coach
+# Gabe's Essay Review
 
-A clean static website for an ethical essay feedback and English tutoring service.
+A clean static website for ethical essay feedback and clearer revisions.
 
 ## Local Development
 
