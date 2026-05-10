@@ -23,7 +23,7 @@
       <a href="#services">Services</a>
       <a href="#pricing">Pricing</a>
     </nav>
-    <a class="header-cta" href="#submit">Open Form</a>
+    <a class="header-cta" href="#pricing">Pricing</a>
   </header>
 
   <main id="top">
@@ -32,9 +32,9 @@
       <div class="hero-content">
         <p class="eyebrow">Gabe's Essay Coach</p>
         <h1 id="hero-title">Essay Feedback That Helps You Revise With Confidence</h1>
-        <p class="hero-subtitle">Upload your draft through a secure external form and receive clear, personalized feedback within 24-48 hours so you can revise with purpose and learn from the process.</p>
+        <p class="hero-subtitle">Choose the review package that fits your draft, then submit the matching secure Tally form for upload and payment. You will receive clear, personalized feedback within 24-48 hours.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#submit">Open Submission Form</a>
+          <a class="button button-primary" href="#pricing">Open Submission Form</a>
           <a class="button button-secondary" href="#integrity">Read Integrity Policy</a>
         </div>
         <dl class="hero-stats" aria-label="Service highlights">
@@ -199,6 +199,7 @@
               <li>Brief revision summary</li>
               <li>Top priorities for revision</li>
             </ul>
+            <a class="button button-primary plan-button" href="https://tally.so/r/obKd4P" target="_blank" rel="noopener noreferrer">Choose Basic Review</a>
           </article>
           <article class="pricing-card featured-plan">
             <p class="plan-badge">Most popular</p>
@@ -212,6 +213,7 @@
               <li>Summary feedback</li>
               <li>Revision checklist</li>
             </ul>
+            <a class="button button-primary plan-button" href="https://tally.so/r/gDY7ed" target="_blank" rel="noopener noreferrer">Choose Full Essay Review</a>
           </article>
           <article class="pricing-card">
             <p class="plan-name">Priority Review</p>
@@ -223,6 +225,7 @@
               <li>Prioritized feedback</li>
               <li>Optional follow-up question</li>
             </ul>
+            <a class="button button-primary plan-button" href="https://tally.so/r/J9XJdd" target="_blank" rel="noopener noreferrer">Choose Priority Review</a>
           </article>
         </div>
       </div>
@@ -232,21 +235,22 @@
       <div class="section-inner form-grid">
         <div class="form-copy">
           <p class="section-kicker">Submit Your Essay</p>
-          <h2 id="submit-title">The secure upload form is handled through an external link.</h2>
-          <p>When the live form is connected, students will use it to upload a draft, share assignment instructions, choose a citation style, and tell Gabe what kind of feedback would help most.</p>
+          <h2 id="submit-title">Choose the package that fits your draft, then submit the matching form.</h2>
+          <p>Each review package has its own secure Tally form for submission, draft upload, and payment. Select Basic, Full, or Priority Review above to send Gabe the details he needs.</p>
         </div>
         <div class="submission-panel" aria-label="External submission form information">
-          <p class="secure-label">Secure external form</p>
-          <h3>Ready for your form link</h3>
-          <p>The submission form will collect:</p>
+          <p class="secure-label">Secure Tally forms</p>
+          <h3>What each form collects</h3>
+          <p>The matching package form will collect:</p>
           <ul class="submission-list">
             <li>Name and email</li>
             <li>Essay draft upload</li>
             <li>Assignment instructions and due date</li>
             <li>Citation style and feedback priorities</li>
+            <li>Payment for the selected review package</li>
           </ul>
-          <a class="button button-primary form-button" href="#" data-placeholder-form aria-label="Open secure external submission form">Open Submission Form</a>
-          <p class="field-note">Placeholder link for launch. Replace this button URL with the secure form destination.</p>
+          <a class="button button-primary form-button" href="#pricing">View Review Packages</a>
+          <p class="field-note">No custom backend is used. Submission, upload, and payment are handled through the external Tally forms linked in the pricing cards.</p>
         </div>
       </div>
     </section>
@@ -290,10 +294,6 @@
     </div>
   </footer>
   <script>
-    document.querySelectorAll("[data-placeholder-form]").forEach((link) => {
-      link.addEventListener("click", (event) => event.preventDefault());
-    });
-
     document.querySelectorAll(".faq-list details").forEach((item) => {
       item.addEventListener("toggle", () => {
         if (!item.open) return;

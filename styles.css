@@ -525,12 +525,18 @@ details p,
 
 .pricing-card ul {
   padding-left: 18px;
-  margin: auto 0 0;
+  margin: 0;
   color: var(--ink-soft);
 }
 
 .pricing-card li + li {
   margin-top: 10px;
+}
+
+.plan-button {
+  width: 100%;
+  margin-top: auto;
+  text-align: center;
 }
 
 .form-section {
